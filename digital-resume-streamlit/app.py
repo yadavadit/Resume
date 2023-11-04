@@ -8,7 +8,7 @@ from PIL import Image
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir / "assets" / "Aditi_Yadav_Resume.pdf"
+# resume_file = current_dir / "assets" / "Aditi_Yadav_Resume.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.jpeg"
 timeline_file = current_dir / "assets" / "timeline.json"
 icon = current_dir / "assets" / "ay.jpg"
@@ -69,8 +69,8 @@ st.markdown("""
 # --- LOAD CSS, PDF & PROFIL PIC ---
 # with open(css_file) as f:
 #     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-with open(resume_file, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+# with open(resume_file, "rb") as pdf_file:
+    # PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
 
 # Custom function for printing text
@@ -97,12 +97,12 @@ with col3:
 lcol,rcol = st.columns([1,1.4])
 with rcol:
   st.write("📫", "yadav.adit@northeastern.edu")
-  st.download_button(
-    label=" 📄  Download Resume  📄",
-    data=PDFbyte,
-    file_name=resume_file.name,
-    mime="application/octet-stream",
-  )  
+  # st.download_button(
+  #   label=" 📄  Download Resume  📄",
+  #   data=PDFbyte,
+  #   file_name=resume_file.name,
+  #   mime="application/octet-stream",
+  # )  
 
 # --- SKILLS ---
 st.write('\n')
