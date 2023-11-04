@@ -1,4 +1,4 @@
-# Arnab's Resume
+# Aditi's Resume
 
 ## Requirements
 Install the dependencies with pip
