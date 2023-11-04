@@ -1,0 +1,6 @@
+Pillow==9.2.0
+streamlit==1.17.0
+streamlit_timeline==0.0.2
+streamlit-player
+pybase64
+altair==4.0
